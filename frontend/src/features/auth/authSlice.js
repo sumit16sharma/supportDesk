@@ -11,7 +11,7 @@ const initialState = {
     isLoading: false,
     message: ''
 }
-
+    
 // Register a new user
 export const register = createAsyncThunk('auth/register', async (user, thunkAPI) => {
     try {

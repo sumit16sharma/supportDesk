@@ -36,7 +36,7 @@ const Login = () => {
         }
 
         dispatch(reset())
-    }, [isError, message, isSuccess, user, navigate, dispatch, reset])
+    }, [isError, message, isSuccess, user, navigate, dispatch])
 
     const onSubmit = (e) => {
         e.preventDefault()

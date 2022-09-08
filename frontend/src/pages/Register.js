@@ -32,7 +32,7 @@ const Register = () => {
         }
 
         dispatch(reset())
-    }, [isError, isSuccess, user, navigate, message, dispatch, reset])
+    }, [isError, isSuccess, user, navigate, message, dispatch])
 
     const onChange = (e) => {
         setFormData((prevState) => ({
@@ -44,7 +44,7 @@ const Register = () => {
     const onSubmit = (e) => {
         e.preventDefault()
 
-        if(password != password2) {
+        if(password !== password2) {
             toast.error('Password do not match')
         } else {
             const userData = {
